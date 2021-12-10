@@ -1,12 +1,9 @@
-using System.Windows.Forms;
+namespace Specshell.WinForm.HiddenForm;
 
-namespace Specshell.WinForm.HiddenForm
+public class HiddenContext : ApplicationContext
 {
-    public class HiddenContext : ApplicationContext
+    public HiddenContext(IHiddenMainForm hiddenForm)
     {
-        public HiddenContext(IHiddenMainForm hiddenForm)
-        {
-            MainForm = hiddenForm.Form;
-        }
+        MainForm = hiddenForm.Form;
     }
 }

@@ -1,9 +1,6 @@
-using System.Windows.Forms;
+namespace Specshell.WinForm.HiddenForm;
 
-namespace Specshell.WinForm.HiddenForm
+public class MainHiddenForm : PartialHiddenForm, IHiddenMainForm
 {
-    public class MainHiddenForm : PartialHiddenForm, IHiddenMainForm
-    {
-        public Form Form => this;
-    }
+    public Form Form => this;
 }
