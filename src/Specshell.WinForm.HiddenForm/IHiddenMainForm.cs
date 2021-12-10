@@ -1,9 +1,6 @@
-using System.Windows.Forms;
+namespace Specshell.WinForm.HiddenForm;
 
-namespace Specshell.WinForm.HiddenForm
+public interface IHiddenMainForm
 {
-    public interface IHiddenMainForm
-    {
-        Form Form { get; }
-    }
+    Form Form { get; }
 }
