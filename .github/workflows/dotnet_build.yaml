@@ -11,8 +11,6 @@ on:
 jobs:
   dotnet:
     uses: specshell/.github/.github/workflows/dotnet-build.yml@main
-    with:
-      runs-on: windows-2022
     secrets:
       package_user: ${{ secrets.NEXUS_USER }}
       package_password: ${{ secrets.NEXUS_PASSWORD }}
