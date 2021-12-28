@@ -12,7 +12,10 @@
     <Nullable>enable</Nullable>
     <Authors>Specshell</Authors>
     <Company>Specshell</Company>
-    <Copyright>Copyright Specshell 2021.</Copyright>
+    <Owners>Specshell</Owners>
+    <Copyright>Copyright $([System.DateTime]::UtcNow.ToString(yyyy)) Specshell. All rights reserved</Copyright>
+    <MinVerVerbosity>normal</MinVerVerbosity>
+    <MinVerTagPrefix>v</MinVerTagPrefix>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(GITHUB_ACTIONS)' == 'true'">
